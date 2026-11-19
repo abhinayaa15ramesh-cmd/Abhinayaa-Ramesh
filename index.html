@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhinayaa Ramesh | Data Scientist</title>
+<meta name="description" content="Portfolio of Abhinayaa Ramesh, Data Science graduate and Data Analyst.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #17243b;
+  --gold: #c9a66b;
+  --cream: #f8f7f3;
+  --text: #263248;
+  --muted: #6e7786;
+  --white: #ffffff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.7;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: var(--white);
+}
+.logo { font-weight: 700; font-size: 23px; color: var(--navy); }
+nav a { text-decoration: none; color: var(--text); margin-left: 24px; font-size: 14px; }
+nav a:hover { color: var(--gold); }
+.hero {
+  background: var(--navy);
+  color: var(--white);
+  padding: 105px 10%;
+}
+.eyebrow { color: var(--gold); letter-spacing: 3px; font-size: 12px; font-weight: 700; }
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(42px, 7vw, 68px);
+  line-height: 1.15;
+  margin: 18px 0;
+}
+.hero h2 { color: var(--gold); font-size: 23px; font-weight: 500; }
+.hero p { max-width: 650px; color: #d6dce5; margin: 22px 0 30px; }
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 23px;
+  border-radius: 5px;
+  background: var(--gold);
+  color: var(--navy);
+  font-weight: 700;
+  margin: 5px 8px 5px 0;
+}
+.btn-outline { background: transparent; color: white; border: 1px solid #aeb8c8; }
+section { padding: 75px 10%; }
+.section-label { color: var(--gold); font-size: 12px; letter-spacing: 2px; font-weight: 700; }
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  color: var(--navy);
+  margin: 8px 0 25px;
+}
+.about-text { max-width: 850px; color: var(--muted); }
+.skills {
+  display: flex; flex-wrap: wrap; gap: 12px; margin-top: 25px;
+}
+.skills span {
+  background: white; border: 1px solid #e5e2db;
+  padding: 9px 17px; border-radius: 5px; font-size: 14px;
+}
+.projects {
+  background: #f0eee8;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  gap: 22px;
+}
+.project-card {
+  background: white; padding: 27px; border-radius: 8px;
+  border: 1px solid #e7e4dd;
+}
+.project-card small { color: var(--gold); font-weight: 700; letter-spacing: 1px; }
+.project-card h4 { font-size: 20px; color: var(--navy); margin: 12px 0; }
+.project-card p { color: var(--muted); font-size: 14px; }
+.tags { margin-top: 18px; color: #777; font-size: 12px; }
+.experience-card {
+  border-left: 3px solid var(--gold);
+  padding: 5px 0 5px 23px;
+  max-width: 750px;
+}
+.experience-card h4 { color: var(--navy); font-size: 20px; }
+.experience-card p { color: var(--muted); }
+.contact {
+  background: var(--navy);
+  color: white;
+  text-align: center;
+}
+.contact h3 { color: white; }
+.contact p { color: #d6dce5; margin-bottom: 20px; }
+.contact a { color: var(--gold); text-decoration: none; }
+footer {
+  background: #101b2d; color: #aeb8c8;
+  text-align: center; padding: 20px; font-size: 13px;
+}
+@media(max-width:650px) {
+  nav { padding: 18px 6%; flex-wrap: wrap; gap: 12px; }
+  nav a { margin-left: 0; margin-right: 12px; }
+  .hero { padding: 75px 7%; }
+  section { padding: 60px 7%; }
+  h3 { font-size: 29px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">AR.</div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="eyebrow">DATA SCIENCE · ANALYTICS · TECHNOLOGY</div>
+  <h1>Abhinayaa<br>Ramesh.</h1>
+  <h2>Aspiring Data Scientist</h2>
+  <p>
+    Economics and Data Science graduate with practical experience
+    in data analysis, dashboard development and Python-based
+    applications. Passionate about transforming complex data
+    into meaningful insights and solutions.
+  </p>
+  <a class="btn" href="#projects">Explore My Work</a>
+  <a class="btn btn-outline" href="#contact">Get In Touch</a>
+</header>
+
+<section id="about">
+  <div class="section-label">A LITTLE ABOUT ME</div>
+  <h3>About Me</h3>
+  <p class="about-text">
+    I am a B.Sc. Economics (Data Science) graduate interested in
+    the intersection of data, technology and problem-solving.
+    My experience includes working on data analysis and reporting
+    for a public health programme, developing interactive
+    dashboards and building Python-based analytical applications.
+    I enjoy exploring datasets, identifying patterns and
+    communicating insights through effective visualisations.
+  </p>
+</section>
+
+<section id="skills">
+  <div class="section-label">WHAT I WORK WITH</div>
+  <h3>Technical Skills</h3>
+  <div class="skills">
+    <span>Python</span>
+    <span>SQL</span>
+    <span>R</span>
+    <span>Excel</span>
+    <span>Power BI</span>
+    <span>Streamlit</span>
+    <span>R Shiny</span>
+    <span>FastAPI</span>
+    <span>MySQL</span>
+    <span>Data Cleaning</span>
+    <span>Data Visualisation</span>
+    <span>Exploratory Data Analysis</span>
+    <span>Machine Learning Basics</span>
+    <span>Statistical Analysis</span>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <div class="section-label">SELECTED WORK</div>
+  <h3>Featured Projects</h3>
+  <div class="project-grid">
+
+    <article class="project-card">
+      <small>01 · DATA ANALYTICS</small>
+      <h4>DMA Infrastructure Dashboard</h4>
+      <p>
+        Developed a Python and Streamlit dashboard to analyse
+        infrastructure project progress, monitor delays and
+        visualise implementation status using government reports.
+      </p>
+      <div class="tags">Python · Streamlit · Excel · Data Analysis</div>
+    </article>
+
+    <article class="project-card">
+      <small>02 · AI & FINANCIAL ANALYTICS</small>
+      <h4>TradeSense AI</h4>
+      <p>
+        Built a financial analytics chatbot using FastAPI and
+        an LLM, integrating stock information and technical
+        indicators to support beginner investors.
+      </p>
+      <div class="tags">Python · FastAPI · LLM · Financial Analytics</div>
+    </article>
+
+    <article class="project-card">
+      <small>03 · DATA VISUALISATION</small>
+      <h4>Stock Market Analytics</h4>
+      <p>
+        Created an interactive R Shiny dashboard to explore
+        stock market data, analyse trends and present
+        financial information visually.
+      </p>
+      <div class="tags">R · Shiny · Yahoo Finance</div>
+    </article>
+
+    <article class="project-card">
+      <small>04 · BUSINESS ANALYTICS</small>
+      <h4>World GDP Analysis</h4>
+      <p>
+        Analysed global GDP data using Excel to explore
+        economic trends, compare countries and communicate
+        findings through visualisations.
+      </p>
+      <div class="tags">Excel · Data Analysis · Visualisation</div>
+    </article>
+
+  </div>
+</section>
+
+<section id="experience">
+  <div class="section-label">PROFESSIONAL JOURNEY</div>
+  <h3>Experience</h3>
+  <div class="experience-card">
+    <h4>Data Analyst – Project ASPIRE</h4>
+    <p>Voluntary Health Services (VHS), Chennai | May 2026 – September 2026</p>
+    <p>
+      Supported data analysis, monitoring and reporting for a
+      public health programme. Worked on district-level data
+      analysis, intervention assessments, reports, dashboards
+      and data visualisations to support programme monitoring
+      and decision-making.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">EDUCATION</div>
+  <h3>Academic Background</h3>
+  <div class="experience-card">
+    <h4>B.Sc. Economics (Data Science)</h4>
+    <p>Shiv Nadar University Chennai</p>
+    <p>Economics, statistics, data science and analytical methods.</p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="section-label">LET'S CONNECT</div>
+  <h3>Have an opportunity in mind?</h3>
+  <p>I'm open to opportunities in Data Science, Data Analytics and Business Intelligence.</p>
+  <p>
+    <a href="https://github.com/abhinayaa15ramesh">GitHub</a>
+    &nbsp; | &nbsp;
+    <a href="https://www.linkedin.com/">LinkedIn</a>
+  </p>
+  <p>Replace this section with your professional email address.</p>
+</section>
+
+<footer>
+  © 2026 Abhinayaa Ramesh · Built with curiosity and data.
+</footer>
+
+</body>
+</html>
